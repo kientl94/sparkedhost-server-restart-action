@@ -1,0 +1,20 @@
+name: 'Pterodactyl-Restart'
+description: 'Automatically restart a pterodactyl container on commit'
+author: '[GodKynn#0066]'
+
+inputs:
+  PTE_PANEL_URL:
+    description: 'The pterodactyl panel URL'
+    required: true
+
+  PTE_BEARER_TOKEN:
+    description: 'The bearer token for the panel to authorize'
+    required: true
+
+  PTE_PANEL_ID:
+    description: 'The ID of that panel that has to be restarted'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'dist/index.mjs'

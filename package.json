@@ -1,0 +1,25 @@
+{
+  "name": "sparkedhost-server-restart-action",
+  "version": "1.0.0",
+  "description": "Github action to restart sparkedhost server after pushing code to github",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.mjs -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kientl94/sparkedhost-server-restart-action.git"
+  },
+  "author": "kientl94",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kientl94/sparkedhost-server-restart-action/issues"
+  },
+  "homepage": "https://github.com/kientl94/sparkedhost-server-restart-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@vercel/ncc": "^0.34.0",
+    "got": "^12.5.3"
+  }
+}
