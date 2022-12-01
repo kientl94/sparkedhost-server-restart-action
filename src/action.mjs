@@ -19,7 +19,7 @@ const url = `${core.getInput('PTE_PANEL_URL')}/api/client/servers/${core.getInpu
 async function run() {
     await got.post(url, {
         headers: {
-            'Authorization': `Bearer ${core.getInput(PTE_BEARER_TOKEN)}`,
+            'Authorization': `Bearer ${core.getInput('PTE_BEARER_TOKEN')}`,
             'Content-Type': 'application/json'
         },
         json: {
